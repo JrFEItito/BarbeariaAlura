@@ -21,7 +21,7 @@
             </div>
         </header>
         <main> <!-- conteúdo principal da página -->
-            <form> 
+            <form action="LogicaContato.php" method="POST"> 
                 <label for="nomesobrenome">Nome e sobrenome</label> <!-- rótulo para o input (especifica no for="")-->
                 <input type="text" name="nome" placeholder="Digite seu nome completo" id="nomesobrenome" class="input-padrao" required> <!-- entrada de dados -->
                 <label for="email">E-mail</label>
@@ -30,7 +30,7 @@
                 <input name="tel" placeholder="(XX) XXXXX-XXXX" id="telefone" class="input-padrao" required>
 
                 <label for="mensagem">Mensagem</label>
-                <textarea cols="30" rows="10" name="text" placeholder="Digite sua mensagem" id="mensagem" class="input-padrao" required></textarea>
+                <textarea cols="30" rows="10" name="text" placeholder="Digite sua mensagem" id="mensagem" class="input-padrao" name="mensagem" required></textarea>
         </main>
     </body>
 </html>
