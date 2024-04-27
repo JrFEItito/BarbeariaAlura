@@ -1,0 +1,34 @@
+#banner{
+    width: 100%;
+}
+h1{
+    padding-left: 20px;
+}
+.principal{
+    background: #CCCCCC;
+    padding: 30px;
+}
+p,h2,h3{
+    text-align: center;
+}
+#missao{
+    font-size: 20px;
+}
+em strong{  
+    color: #FF0000;
+}
+ul{
+    font-style: italic;
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+.beneficios{
+    background: #FFFFFF;
+    padding: 20px;
+}
+
+.imagembeneficios{
+    width: 50%;
+}
