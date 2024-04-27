@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato - Barbearia Alura</title>
+        <link rel="stylesheet" href="resset.css"> <!-- apaga o que o navegador cria -->
+        <link rel="stylesheet" href="style-contatos.css">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="imagens/logo.png" alt="Logo da Barbearia Alura"></h1>  <!-- h1 título + importante, primeira coisa a exibir, ponto inicial na página = posicao estatica (parado no modo padrao)-->
+                <nav> <!-- seção da página que aponta pra outras paginas) -->
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main> <!-- conteúdo principal da página -->
+            <form> 
+                <label for="nomesobrenome">Nome e sobrenome</label> <!-- rótulo para o input (especifica no for="")-->
+                <input type="text" name="nome" placeholder="Digite seu nome completo" id="nomesobrenome" class="input-padrao" required> <!-- entrada de dados -->
+                <label for="email">E-mail</label>
+                <input type="email" name="email" placeholder="seuemail@dominio.com" id="email" class="input-padrao" required>
+                <label for="telefone">telefone</label>
+                <input name="tel" placeholder="(XX) XXXXX-XXXX" id="telefone" class="input-padrao" required>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="30" rows="10" name="text" placeholder="Digite sua mensagem" id="mensagem" class="input-padrao" required></textarea>
+        </main>
+    </body>
+</html>
