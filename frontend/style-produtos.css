@@ -1,0 +1,101 @@
+header{
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto; /* centralizar o elemento, a div (text-align: center alinha o conteúdo)*/
+}
+nav{
+    position: absolute;  /* absoluto em relação a página, para tá em relação a outro elemento, esse elemento tem que ter position relative*/
+    top: 110px;
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;/* topo, direta, para baixo, esquerda */
+}
+nav a{
+    text-transform: uppercase;  /* texto em maiúsculo */
+    color: #000000;
+    font-weight: bold; /* texto em negrito */
+    font-size: 22px;
+    text-decoration: none; 
+}
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0; /* aumnta o tamanho do elemento */
+}
+.produtos li{
+    display: inline-block; /* alinha os elementos em linha */
+    text-align: center;
+    width: 29%;
+    vertical-align: top; /* alinha os elementos no topo */
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /* tamanho da caixa, inclui o padding e a borda */
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+.produtos li:hover{
+    border-color: #c78c19;
+}
+.produtos li:hover h2{ /* mouse em cima */
+    font-size: 34px;
+}
+.produtos li:active{ /* mouse sendo clicado */
+    border-color: #088c19;
+}
+.produtos h2{
+    font-size:30px;
+    font-weight: bold;
+}
+.produto-descricao{
+    font-size: 18px;
+}
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background-image: url("imagens/bg.jpg") ;
+    background-color: #000000;
+    padding: 40px 0;
+}
+
+.copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+@media screen and (max-width: 480px){
+    /* entrega esse estilo, mexemos só no que queremos mudar */
+    .caixa, .produtos{
+        width: auto;
+        text-align: center;
+    } 
+    h1{
+        width: auto;
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .produtos li{
+        width: 60%;
+        margin-bottom: 5em;
+    }
+    li img{
+        width: 100%;
+    }
+}
+
