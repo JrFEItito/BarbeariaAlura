@@ -121,6 +121,7 @@ p:first-line{
 footer{
     text-align: center;
     background-image: url("imagens/bg.jpg") ;
+    background-color: #000000;
     padding: 40px 0;
 }
 .copyright{ 
@@ -146,53 +147,3 @@ footer{
         width: 100%;
     }
 }
-
-/* Qual a principal tática para não perder muito tempo criando layouts responsivos?
--Usar medidas proporcionais para tudo (em)
--Criar um layout fluido que se adapte sempre */
-
-/* 
-seletores avançados-> fazer seleção de elementos, possivel selecinar os filhos diretos dos elementos pelo simbulo >
-ex: main > p {
-    background: red;
-}
- primeiro paragrafo apos uma imagem-> img + p{
-    background: blue;
-}
-todos paragrafos após imagem-> img ~ p{
-    background: yellow;
-}
-selecionar todos os paragrafos que não estao em uma determinada id->
-#missao p:not(#missao p){
-    background: orange;
-}
-<h2>
-<section>
-    <h2>
-    <p>
-    </p>
-    <h2>
-->selecionar o último <h2>->section > p + h2
-
-Calcular largura, altura e posicionamento de um elemento de maneira dinamica:
-calc() -> calcula o valor de uma propriedade (ex: width: calc(100% - 20px); (primeiro valor resultado)
-
-Como usar as medidas proporcionais para deixar um elemento de 100% de largura com o equivalente a um terço do elemento pai, menos 10px?
-width: calc( (100% / 3) - 10px )~
-
-Opacidade:
-tudo pode ter opacidade
-em cor: color: rgba(0,0,0,0.5); (0: transparente, 1: opaco -> 0.5 de opacidade
-no geral-> opacity: 0.5; (0: transparente, 1: opaco -> 0.5 de opacidade
-
-Sombra: 
-text-shadow: 1px 1px 1px 3px #000000; (horizontal, vertical, blur,intensidade da borda, cor)
-box-shadow: 19px 10px 1px, 1px #000000, -10px -10px rgba(255,0,0,0.5); (horizontal, vertical, blur,intensidade da borda, cor)
-podemos colocar varias sombras, separando-as por ,
-fazer uma sombra interna em um elemento->box-shadow: inset 0 0 5px black;
-Como manipular a opacidade dos elementos, com a propriedade CSS opacity
-Como manipular a opacidade das cores
-Como adicionar um sombreamento em volta dos elementos, com a propriedade CSS box-shadow
-Como adicionar um sombreamento em textos, com a propriedade CSS text-shadow
-Como marcar um elemento para que ele seja apresentado de outra forma, em uma tela de até 480px? -> dentro do @media (max-width: 480px) {}
-*/
