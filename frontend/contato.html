@@ -13,7 +13,7 @@
                 <h1><img src="imagens/logo.png" alt="Logo da Barbearia Alura"></h1>  <!-- h1 título + importante, primeira coisa a exibir, ponto inicial na página = posicao estatica (parado no modo padrao)-->
                 <nav> <!-- seção da página que aponta pra outras paginas) -->
                     <ul>
-                        <li><a href="home.html">Home</a></li>
+                        <li><a href="inicio.html">Home</a></li>
                         <li><a href="produtos.html">Produtos</a></li>
                         <li><a href="contato.html">Contato</a></li>
                     </ul>
@@ -21,40 +21,41 @@
             </div>
         </header>
         <main> <!-- conteúdo principal da página -->
-            <form> 
-                <label for="nomesobrenome">Nome e sobrenome</label> <!-- rótulo para o input (especifica no for="")-->
-                <input type="text" name="nome" placeholder="Digite seu nome completo" id="nomesobrenome" class="input-padrao" required> <!-- entrada de dados -->
-                <label for="email">E-mail</label>
-                <input type="email" name="email" placeholder="seuemail@dominio.com" id="email" class="input-padrao" required>
-                <label for="telefone">telefone</label>
-                <input name="tel" placeholder="(XX) XXXXX-XXXX" id="telefone" class="input-padrao" required>
+            <form action="logica.php" method="POST"> 
+                <!-- <label for="nomesobrenome">Nome e sobrenome</label> <!-- rótulo para o input (especifica no for="")-->
+                <!-- <input type="text" name="nome" placeholder="Digite seu nome completo" id="nomesobrenome" class="input-padrao"> entrada de dados -->
+                <!-- <label for="email">E-mail</label> -->
+                <!-- <input type="email" name="email" placeholder="seuemail@dominio.com" id="email" class="input-padrao"> -->
+                <!-- <label for="telefone">telefone</label> -->
+             <!-- <input name="tel" placeholder="(XX) XXXXX-XXXX" id="telefone" class="input-padrao"> -->
 
                 <label for="mensagem">Mensagem</label>
-                <textarea cols="30" rows="10" name="text" placeholder="Digite sua mensagem" id="mensagem" class="input-padrao" required></textarea>
-                <fieldset><!--tag específica para formulario (ao inves de div)  -->
-                    <legend>Como prefere o nosso contato?</legend><!-- no formulário, ao inves de p temos titulo(legend) -->
-                    <label for="radio-email"> 
-                        <input type="radio" name="contato" value="email" id="radio-email"> E-mail
-                    </label> <!-- com input radio tendo o mesmo name esses inputs fazem parte do mesmo grupo, só um pode ser selecionado -->
-                    <label for="radio-telefone">
-                        <input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone
-                    </label>
-                    <label for="radio-whatsapp">
-                        <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp
-                    </label>
-                </fieldset>
-                <fieldset>
+                <textarea cols="30" rows="10" name="Mensagem" placeholder="Digite sua mensagem" id="mensagem" class="input-padrao" required></textarea>
+
+                <!-- <fieldset><!--tag específica para formulario (ao inves de div)  -->
+                    <!-- <legend>Como prefere o nosso contato?</legend>no formulário, ao inves de p temos titulo(legend) -->
+                    <!-- <label for="radio-email">  -->
+                        <!-- <input type="radio" name="contato" value="email" id="radio-email"> E-mail -->
+                    <!-- </label> com input radio tendo o mesmo name esses inputs fazem parte do mesmo grupo, só um pode ser selecionado -->
+                    <!-- <label for="radio-telefone"> -->
+                        <!-- <input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone -->
+                    <!-- </label> -->
+                    <!-- <label for="radio-whatsapp"> -->
+                        <!-- <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp -->
+                    <!-- </label> -->
+                <!-- </fieldset> -->
+                <!-- <fieldset>
                     <legend>Qual horário prefere ser atendido?</legend>
                     <select>
                         <option value="0">Manhã</option>
                         <option value="1">Tarde</option>
                         <option value="2">Noite</option>
                     </select>
-                </fieldset>
-                <label class="checkbox">
+                </fieldset> -->
+                <!-- <label class="checkbox">
                     <input type="checkbox" name="checkbox" value="sim" checked>Gostaria de receber nossas novidades por e-mail?
-                </label>
-                <input type="submit" value="Enviar" class="enviar"> <!-- <button type="submit">Enviar</button> -->
+                </label> -->
+                <input type="submit" value="Enviar" class="enviar" name="Enviar"> <!-- <button type="submit">Enviar</button> -->
             </form>
             <table>
                 <thead>
