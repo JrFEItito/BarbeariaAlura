@@ -7,6 +7,13 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+$servidor = "localhost";
+$usuario ="jrfei570_membros";
+$senha = "tj109652";
+$dbname = "jrfei570_CursoPHP";
+
+$conexao = mysqli_connect($servidor,$usuario, $senha, $dbname) or die("erro");
+
 if (isset($_POST['Enviar'])) {
     $mensagem = mysqli_real_escape_string($conexao, $_POST['Mensagem']); // Escapar a mensagem para evitar SQL Injection
     $inserir = "INSERT INTO PDI_GitHub_Barbearia (MENSAGEM) VALUES ('$mensagem')"; // Removido valor vazio do ID
